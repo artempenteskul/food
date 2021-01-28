@@ -299,6 +299,8 @@ window.addEventListener('DOMContentLoaded', function() {
     //     .then(json => console.log(json));     
 
 
-
+    fetch(' db.json')
+        .then(data => data.json())
+        .then(res => console.log(res));
 
 });
